@@ -1,0 +1,104 @@
+.body {
+  background-color: #1a1d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: roboto;
+  font-family: bold;
+}
+
+.main-container {
+  background-color: aliceblue;
+  width: 1109px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background: #1c1e21;
+  box-shadow: 0px 15px 30px #16181b;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+#sec-1 {
+  background: #6856ec;
+  height: 813px;
+  padding: 0px;
+}
+#sec-2 {
+  color: #6856ec;
+  padding: 60px;
+  font-family: roboto;
+}
+.div.Row {
+  color: white;
+}
+#form {
+  margin-top: 40px;
+  align-content: center;
+}
+.textbox {
+  color: #6856ec;
+  background-color: #1c1e21;
+  border: none;
+  width: 433px;
+  height: 50px;
+  border-bottom: #6856ec solid 3px;
+}
+.button {
+  background-color: #6856ec;
+  width: 433px;
+  height: 47px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: white;
+  margin-top: 20px;
+  opacity: 1;
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+div.social {
+  text-align: center;
+  margin-top: 20px;
+}
+.social a {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 30px;
+}
+/* Change the color of links on mouse-over */
+.social a:hover {
+  color: #6856ec;
+}
+/* Float */
+
+.social a:hover {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.social a:hover:hover,
+.social a:hover:focus,
+.social a:hover:active {
+  transform: translateY(-8px);
+}
