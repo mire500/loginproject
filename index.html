@@ -19,7 +19,7 @@
       <div class="column" id="sec-2">
         <div class="Row">
           <h2 style="color: white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+            Sign up to our volunteering community, spread the support around...
           </h2>
           <p style="color: #8e8888; font-size: 11px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus
@@ -30,32 +30,46 @@
 
         <div class="row">
           <!-- form starts here  -->
-          <form action="/action_page.php" id="form">
-            <label for="fname">First name</label><br />
-            <input
-              class="textbox"
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="John"
-            /><br /><br />
-            <label for="lname">Last name</label><br />
-            <input
-              class="textbox"
-              type="text"
-              id="lname"
-              name="lname"
-              placeholder="Doe"
-            /><br /><br />
+          <form id="form">
+            <div class="input-item"><label for="fname">First name</label><br /><div class="form-control">
+              <input
+                class="textbox"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="John"> 
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <div class="errormsg" id="errormsg"></div>
+            </div></div>
+           <br /><br />
+           <div class="input-item"><div class="form-control">
             <label for="lname">Email</label><br />
             <input
               class="textbox"
               type="text"
               id="email"
               name="lname"
-              placeholder="Example@gmail.com"
-            /><br /><br />
-            <input class="button" type="submit" value="Sign up" />
+              placeholder="Example@gmail.com" >
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-times-circle"></i>
+              <div class="errormsg" id="erroremail"></div>
+           </div></div>
+    <br /><br />
+   <div class= "input-item"><div class="form-control">
+    <label for="password">Password</label>
+    <input
+      class="textbox"
+      type="password"
+      id="password"
+      name="lname"
+      placeholder="*********">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-times-circle"></i>
+      <div class="errormsg" id="errorpass"></div>
+   </div></div>
+            <br/><br />
+            <input class="button" onclick=  type="submit" value="Sign up" />
           </form>
           <!-- form ends here -->
           <div>
@@ -71,7 +85,7 @@
              
             </div>
             <div  class="parag">
-                <h4>Already  a memeber?<a href="https://www.w3schools.com">Login</a></span></h4>
+                <h4>Already  a memeber?  <a  class="login" href="https://www.w3schools.com">Login</a></span></h4>
             </div>
           </div>
         </div>

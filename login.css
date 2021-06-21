@@ -1,4 +1,4 @@
-.body {
+* body {
   background-color: #1a1d20;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px;
 }
 
 #sec-1 {
@@ -32,7 +32,7 @@
 }
 #sec-2 {
   color: #6856ec;
-  padding: 60px;
+  padding: 30px 50px;
   font-family: roboto;
 }
 .div.Row {
@@ -50,6 +50,69 @@
   height: 50px;
   border-bottom: #6856ec solid 3px;
 }
+
+/* .wrapper {
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.15);
+  position: relative;
+  width: 450px;
+} */
+
+.form-control i {
+  opacity: 0;
+}
+
+.form-control.success input {
+  border: 1px solid rgb(58, 145, 58);
+}
+
+.form-control.success i {
+  color: rgb(58, 145, 58);
+}
+
+.form-control.success i.fa-check-circle {
+  opacity: 1;
+}
+
+.form-control.fail input {
+  border: 1px solid rgb(145, 58, 58);
+}
+
+.form-control.fail i {
+  color: #913a3a;
+}
+
+.form-control.fail i.fa-times-circle {
+  opacity: 1;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control i {
+  position: absolute;
+  bottom: 15px;
+  right: 65px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+}
+.errormsg {
+  position: absolute;
+  color: #913a3a;
+}
+
 .button {
   background-color: #6856ec;
   width: 433px;
@@ -57,10 +120,11 @@
   box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.25);
   border: none;
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
   opacity: 1;
   transition: 0.9s;
   cursor: pointer;
+  text-align: center;
 }
 
 .button:hover {
@@ -69,7 +133,9 @@
 
 div.social {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
+  color: #6856ec;
+  position: reletive;
 }
 .social a {
   display: inline-block;
@@ -101,4 +167,11 @@ div.social {
 .social a:hover:focus,
 .social a:hover:active {
   transform: translateY(-8px);
+}
+.login {
+  text-decoration: none;
+  color: white;
+  font-family: roboto;
+  font-size: 12px;
+  font-weight: 200;
 }
